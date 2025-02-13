@@ -53,8 +53,8 @@ bash retroarch_install.sh
 ```
 
 # Clean to Start Over
-Remove install directory.
-${DIR_INSTALL}    
+Remove install directory.  
+${DIR_INSTALL}  
 > Usually: /storage/retroarch
 
 Remove link.  
