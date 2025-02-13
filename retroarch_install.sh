@@ -50,7 +50,7 @@ TARFILE=${TRIPLET}.tar
 if [ "${#VERSION}" -lt 14 ]; then
 	TARURL=https://github.com/libretro/Lakka-LibreELEC/releases/download/v${VERSION}/${TARFILE}
 else
-	TARURL=https://nightly.builds.lakka.tv/latest/RPi4.aarch64/${TARFILE}
+	TARURL=https://nightly.builds.lakka.tv/latest/${DEVICE}.${ARCH}/${TARFILE}
 fi
 
 echo "--- Settings ---"
