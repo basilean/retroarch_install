@@ -53,6 +53,10 @@ bash retroarch_install.sh
 ```
 
 # Clean to Start Over
-- ${DIR_INSTALL}
-- ${HOME}/.config/retroarch
-- ${HOME}/.config/.config/system.d/retroarch.service
+Remove install directory.
+- ${DIR_INSTALL}  
+> Usually: /storage/retroarch
+
+Remove link.
+- ${HOME}/.config/retroarch  
+> Usually: /storage/.config/retroarch
