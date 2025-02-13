@@ -14,7 +14,7 @@ wget -q -O - https://raw.githubusercontent.com/basilean/retroarch_install/refs/h
 ```
 > It takes approx 25 minutes to complete.
 
-Now you have a RetroArch link in your favourites, click on it and wait 10 seconds (first time takes longer).
+Now you have a RetroArch link in your favourites, click on it and wait 5 seconds (first time takes longer).
 
 # Hacking It
 Download the script.
@@ -29,10 +29,22 @@ vi retroarch_install.sh
 
 ```bash
 VERSION=6.x-20250207-0af7dae
+```
+> It needs to be a valid version from releases or nightly.
+> https://github.com/libretro/Lakka-LibreELEC/releases
+> https://nightly.builds.lakka.tv/latest 
+
+```bash
 DIR_INSTALL=${HOME}/retroarch
+DIR_TMP=${DIR_INSTALL}/tmp
+```
+> Destination for retroarch, also used temporal over installation by default.
+
+```bash
 DEVICE=
 ARCH=
 ```
+> Empty DEVICE or ARCH will get it from the "/etc/release" file.
 
 Run it.
 ```bash
