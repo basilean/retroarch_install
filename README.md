@@ -2,7 +2,7 @@ This script will help you to install RetroArch from a Lakka image to an already 
 
 Original post: https://forum.libreelec.tv/thread/29500-libreelec-kodi-lakka-retroarch
 
-# Gatting Started
+# Getting Started
 Connect to LibreElec device by ssh.
 ```bash
 ssh root@LibreElec
@@ -54,9 +54,9 @@ bash retroarch_install.sh
 
 # Clean to Start Over
 Remove install directory.
-- ${DIR_INSTALL}  
+${DIR_INSTALL}    
 > Usually: /storage/retroarch
 
-Remove link.
-- ${HOME}/.config/retroarch  
+Remove link.  
+${HOME}/.config/retroarch  
 > Usually: /storage/.config/retroarch
