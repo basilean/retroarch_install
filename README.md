@@ -51,3 +51,8 @@ Run it.
 ```bash
 bash retroarch_install.sh
 ```
+
+# Clean to Start Over
+- ${DIR_INSTALL}
+- ${HOME}/.config/retroarch
+- ${HOME}/.config/.config/system.d/retroarch.service
