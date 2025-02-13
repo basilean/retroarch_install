@@ -61,3 +61,24 @@ ${DIR_INSTALL}
 Remove link.  
 ${HOME}/.config/retroarch  
 > Usually: /storage/.config/retroarch
+
+# Troubleshoot RetroArch
+Edit systemd service.
+```bash
+vi /storage/.config/system.d/retroarch.service
+```
+
+Change this line adding arguments.
+```bash
+ExecStart=/storage/retroarch/retroarch -v --log-file=/tmp/retroarch.log
+```
+
+Reload systemd
+```bash
+systemctl daemon-reload
+```
+
+Next time you run it it will create log file.
+```bash
+tail /tmp/retroarch.log
+```
