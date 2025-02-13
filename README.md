@@ -1,6 +1,7 @@
 This script will help you to install RetroArch from a Lakka image to an already working OS LibreELEC with Kodi.
 
-Original post: https://forum.libreelec.tv/thread/29500-libreelec-kodi-lakka-retroarch
+Original post:  
+https://forum.libreelec.tv/thread/29500-libreelec-kodi-lakka-retroarch
 
 # Getting Started
 Connect to LibreElec device by ssh.
