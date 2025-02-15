@@ -83,7 +83,7 @@ mkdir ${DIR_INSTALL}
 echo "Checking if there is 9G of free space on target filesystem..."
 echo "(only 6.5G will be used after installation)"
 FREESPACE=`df -m ${DIR_INSTALL} | grep -v Filesystem | awk '{print $4}'`
-if [ "${FREESPACE}" -lt 9000 ]; then
+if [ "${FREESPACE}" -lt 10000 ]; then
 	echo "Only ${FREESPACE}M of free space available in ${DIR_INSTALL}."
 	echo "Reclaim some space and start over."
 	exit 1
