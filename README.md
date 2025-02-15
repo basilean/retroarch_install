@@ -82,3 +82,8 @@ Next time you run it it will create log file.
 ```bash
 tail /tmp/retroarch.log
 ```
+# BIOS
+I wrote this script to help download BIOS from a Internet Archive collection.
+```bash
+wget -q -O - https://raw.githubusercontent.com/basilean/retroarch_install/refs/heads/main/retrobios_install.py | python3
+```
