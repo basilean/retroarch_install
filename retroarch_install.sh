@@ -185,6 +185,7 @@ EOF
 
 echo "Creating a favorite shortcut..."
 echo "(this will execute script from kodi)"
+[[ -e ${HOME}/.kodi/userdata/favourites.xml ]] || echo -e '<?xml version="1.0"?>\n<favourites>\n</favourites>' > ${HOME}/.kodi/userdata/favourites.xml
 xml ed \
 	-L \
 	-s "/favourites" -t elem -n "favourite" -v "RunScript(${DIR_INSTALL}/retroarch.py)" \
